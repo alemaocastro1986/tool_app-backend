@@ -1,0 +1,20 @@
+
+
+    <div style="margin-left:auto; margin-right: auto; width: 30em">
+      <strong>Olá,</strong>
+      <p>
+        O Usuário <strong style="color:#32a060;">{{user.name}}</strong> efetuou alterações no estoque do
+        material abaixo:
+      </p>
+      <ul>
+        <li>Id: <strong>{{stock.tool_id}}</strong></li>
+        <li>Descrição: <strong>{{stock.tool}}</strong></li>
+        <li>
+          Quantidade:
+          <ul style="list-style: none;">
+            <li>De: <strong style="color: tomato;">{{stock.oldQuantity}}</strong></li>
+            <li>Para: <strong style="color:darkgreen">{{stock.newQuantity}}</strong></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
