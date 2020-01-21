@@ -18,6 +18,11 @@ const routes = Router();
 routes.post('/sessions', SessionController.store);
 
 routes.use(auth);
+
+routes.get('/', (req, res) => {
+  return res.json({ ok: true });
+});
+
 // Users
 routes.get('/users', UserController.index);
 routes.get('/users/:id', UserController.show);
